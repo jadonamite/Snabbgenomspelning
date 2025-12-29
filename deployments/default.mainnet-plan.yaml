@@ -11,71 +11,25 @@ plan:
         - contract-publish:
             contract-name: aboki-escrow-lite
             expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 9600
+            cost: 4174559
             path: contracts/aboki-escrow-lite.clar
             anchor-block-only: true
             clarity-version: 4
         - contract-publish:
             contract-name: christmas-red-envelope
             expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 6680
+            cost: 4174387
             path: contracts/christmas-red-envelope.clar
             anchor-block-only: true
             clarity-version: 4
-        - contract-publish:
-            contract-name: daily-checkin
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 5370
-            path: contracts/daily-checkin.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: feedback-box
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 6260
-            path: contracts/feedback-box.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: onchain-notepad
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 3250
-            path: contracts/onchain-notepad.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: personal-counter
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 3630
-            path: contracts/personal-counter.clar
-            anchor-block-only: true
-            clarity-version: 4
+       
+        
         - contract-publish:
             contract-name: prediction-market-lite
             expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 6680
+            cost: 4174387
             path: contracts/prediction-market-lite.clar
             anchor-block-only: true
             clarity-version: 4
-        - contract-publish:
-            contract-name: simple-points
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 7390
-            path: contracts/simple-points.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: simple-wallet-registry
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 3490
-            path: contracts/simple-wallet-registry.clar
-            anchor-block-only: true
-            clarity-version: 4
-        - contract-publish:
-            contract-name: status-logger
-            expected-sender: SP3GAYKCWBD2PTNR77WGYWCPPR102C5E0C9MBGPS7
-            cost: 4620
-            path: contracts/status-logger.clar
-            anchor-block-only: true
-            clarity-version: 4
+       
       epoch: "3.3"
