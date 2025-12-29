@@ -5,8 +5,13 @@
 (define-data-var approved bool false)
 
 (define-public (deposit (seller-address principal))
-    (let ((amount u1000)) ;; Hardcoded small amount for testing
-        (try! (stx-transfer? amount tx-sender (as-contract tx-sender)))
+    (let 
+        (
+            (amount u1000)
+            (self (as-contract tx-sender)) ;; FIX: Capture contract address here
+        ) 
+        ;; Now use 'self' instead of the complex function call
+        (try! (stx-transfer? amount tx-sender self))
         (var-set buyer tx-sender)
         (var-set seller seller-address)
         (var-set balance amount)

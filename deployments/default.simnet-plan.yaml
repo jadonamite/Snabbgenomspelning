@@ -64,6 +64,21 @@ plan:
     - id: 0
       transactions:
         - emulated-contract-publish:
+            contract-name: aboki-escrow-lite
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/aboki-escrow-lite.clar
+            clarity-version: 4
+        - emulated-contract-publish:
+            contract-name: christmas-red-envelope
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/christmas-red-envelope.clar
+            clarity-version: 4
+        - emulated-contract-publish:
+            contract-name: feedback-box
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/feedback-box.clar
+            clarity-version: 4
+        - emulated-contract-publish:
             contract-name: onchain-notepad
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/onchain-notepad.clar
