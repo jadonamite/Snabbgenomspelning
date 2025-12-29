@@ -4,7 +4,7 @@
 (define-public (fund-envelope (amount uint) (recipient principal))
     (begin
         ;; FIX: Send to Deployer address to validate funds
-        (try! (stx-transfer? amount tx-sender 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM))
+        (try! (stx-transfer? amount tx-sender 'tx-sender))
         (ok (map-set Envelopes tx-sender { amount: amount, recipient: recipient }))
     )
 )

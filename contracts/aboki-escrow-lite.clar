@@ -8,7 +8,7 @@
     (let ((amount u1000)) 
         ;; FIX: Send to the standard Deployer address to prove funds exist
         ;; This avoids the "Self-Transfer" error (err u2)
-        (try! (stx-transfer? amount tx-sender 'ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM))
+        (try! (stx-transfer? amount tx-sender 'tx-sender))
         
         (var-set buyer tx-sender)
         (var-set seller seller-address)
