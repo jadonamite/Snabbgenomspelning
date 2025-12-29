@@ -74,6 +74,11 @@ plan:
             path: contracts/christmas-red-envelope.clar
             clarity-version: 4
         - emulated-contract-publish:
+            contract-name: daily-checkin
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/daily-checkin.clar
+            clarity-version: 4
+        - emulated-contract-publish:
             contract-name: feedback-box
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/feedback-box.clar
@@ -87,6 +92,16 @@ plan:
             contract-name: personal-counter
             emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
             path: contracts/personal-counter.clar
+            clarity-version: 4
+        - emulated-contract-publish:
+            contract-name: prediction-market-lite
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/prediction-market-lite.clar
+            clarity-version: 4
+        - emulated-contract-publish:
+            contract-name: simple-points
+            emulated-sender: ST1PQHQKV0RJXZFY1DGX8MNSNYVE3VGZJSRTPGZGM
+            path: contracts/simple-points.clar
             clarity-version: 4
         - emulated-contract-publish:
             contract-name: simple-wallet-registry

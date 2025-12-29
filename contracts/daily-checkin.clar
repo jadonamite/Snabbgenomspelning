@@ -5,9 +5,9 @@
     (let
         (
             (last-height (default-to u0 (map-get? LastCheckIn tx-sender)))
-            (current-height block-height)
+            (current-height burn-block-height) ;; FIX: Use burn-block-height
         )
-        ;; Ensure at least 1 block has passed since last time
+        ;; Ensure at least 1 block has passed
         (asserts! (> current-height last-height) (err u400))
         (ok (map-set LastCheckIn tx-sender current-height))
     )
