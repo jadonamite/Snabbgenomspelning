@@ -6,7 +6,7 @@
 (define-public (vote-yes)
     (begin
         ;; FIX: Send to Deployer address to prove funds exist
-        (try! (stx-transfer? COST tx-sender 'tx-sender))
+        (try! (stx-transfer? COST tx-sender tx-sender))
         (ok (var-set yes-pool (+ (var-get yes-pool) COST)))
     )
 )
@@ -14,7 +14,7 @@
 (define-public (vote-no)
     (begin
         ;; FIX: Send to Deployer address to prove funds exist
-        (try! (stx-transfer? COST tx-sender 'tx-sender))
+        (try! (stx-transfer? COST tx-sender tx-sender))
         (ok (var-set no-pool (+ (var-get no-pool) COST)))
     )
 )
