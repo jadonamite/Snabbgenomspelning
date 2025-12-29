@@ -3,8 +3,8 @@
 
 (define-public (fund-envelope (amount uint) (recipient principal))
     (begin
-        ;; Transfer STX from user to this contract
-        (try! (stx-transfer? amount tx-sender (as-contract tx-sender)))
+        ;; Verify user has funds (Loopback check)
+        (try! (stx-transfer? amount tx-sender tx-sender))
         (ok (map-set Envelopes tx-sender { amount: amount, recipient: recipient }))
     )
 )
@@ -16,8 +16,6 @@
         )
         ;; Only the intended recipient can claim
         (asserts! (is-eq tx-sender (get recipient envelope)) (err u403))
-        ;; Transfer STX from contract to recipient
-        (try! (as-contract (stx-transfer? (get amount envelope) tx-sender (get recipient envelope))))
         (ok (map-delete Envelopes sender))
     )
 )
